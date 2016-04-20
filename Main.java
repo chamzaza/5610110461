@@ -11,6 +11,7 @@ public class Main {
 		frame.setSize(400, 650);
 		frame.getContentPane().setLayout(new BorderLayout());
 		GameEngine engine = new GameEngine(gp, v);
+		frame.addKeyListener(engine);
 		engine.start();
 		frame.add(gp);
 		frame.setVisible(true);
